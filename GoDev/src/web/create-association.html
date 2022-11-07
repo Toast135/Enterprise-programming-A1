@@ -1,0 +1,17 @@
+{{if .Success}}
+    <h1>Thanks for your message!</h1>
+{{else}}
+    <h1>Share a note:</h1>
+    <form method="POST" style="margin: 20px;">
+        <label>User ID:</label><br />
+        <input type="number" name="user" style="width: 20%; margin-bottom: 30px;"><br />
+        <label>Note ID:</label><br />
+        <input type="number" name="note" style="width: 20%; margin-bottom: 30px;"><br />
+        <label>Permission level:</label><br />
+        <select type="text" name="permission" style="width: 20%; margin-bottom: 30px;"><br />
+            <option value="Read only">Read only</option>
+            <option value="Write only">Write only</option>
+            <option value="Read/Write">Read/Write</option>
+        <input type="submit">
+    </form>
+{{end}}
